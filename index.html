@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مؤسسة الاتجاه اللامع | تأجير كنب وجلسات وطاولات وكراسي وكوش ومكيفات</title>
+<meta name="description" content="مؤسسة الاتجاه اللامع لتأجير مستلزمات الحفلات والمناسبات. تأجير كنب، جلسات، طاولات وكراسي، كوش ومداخل، حواجز وممرات ولمبات وسماعات، ومكيفات فريون وصحراوي.">
+<meta name="keywords" content="الاتجاه اللامع, تأجير مستلزمات الحفلات, تأجير مستلزمات المناسبات, تأجير كنب, كنب للايجار, تأجير جلسات, جلسات شعبية للايجار, تأجير طاولات وكراسي, تأجير كراسي, تأجير طاولات, طاولات مناسبات, كراسي حفلات, تأجير كوش, كوش افراح, تأجير مداخل, طاولات استقبال, تأجير حواجز, تأجير ممرات, تأجير لمبات, عقود لمبات, تأجير سماعات, مكبرات صوت, تأجير مكيفات, مكيفات فريون, مكيفات صحراوية, تجهيز حفلات, تجهيز مناسبات">
+
+<meta name="theme-color" content="#17212b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مؤسسة الاتجاه اللامع">
+<meta property="og:description" content="تأجير وتجهيز مستلزمات الحفلات والمناسبات">
+<meta property="og:image" content="https://i.postimg.cc/02h5PNXc/a9a6550a-329e-4145-b504-8a77c54dbcd1.jpg">
+
+<link rel="icon" href="https://i.postimg.cc/02h5PNXc/a9a6550a-329e-4145-b504-8a77c54dbcd1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --dark:#17212b;
+  --dark2:#263746;
+  --gold:#d8ad55;
+  --gold2:#f0d18c;
+  --cream:#f7f3eb;
+  --white:#fff;
+  --text:#20252a;
+  --muted:#68717a;
+  --shadow:0 10px 35px rgba(0,0,0,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Cairo",sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,#fff,#f8f5ef);
+  line-height:1.8;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+
+/* Header */
+header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(23,33,43,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(216,173,85,.45);
+}
+.header-inner{
+  min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{
+  width:55px;height:55px;object-fit:cover;border-radius:50%;
+  border:2px solid var(--gold);background:#fff;
+}
+.brand-text strong{display:block;color:#fff;font-size:1.15rem}
+.brand-text span{color:var(--gold2);font-size:.78rem}
+.menu-btn{
+  border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;
+  font-size:28px;width:48px;height:46px;border-radius:10px;cursor:pointer;
+}
+.desktop-links{display:flex;gap:7px;align-items:center}
+.desktop-links a{
+  color:#fff;padding:8px 11px;border-radius:8px;font-size:.84rem;
+}
+.desktop-links a:hover{background:rgba(216,173,85,.16);color:var(--gold2)}
+
+/* Side menu */
+.side{
+  position:fixed;top:0;right:-330px;width:310px;height:100vh;z-index:3000;
+  background:#fff;box-shadow:-8px 0 35px rgba(0,0,0,.2);
+  padding:25px 20px;transition:.35s;overflow:auto;
+}
+.side.open{right:0}
+.side .close{
+  font-size:30px;background:none;border:0;cursor:pointer;color:var(--dark);
+  display:block;margin-right:auto;
+}
+.side-logo{width:80px;height:80px;object-fit:cover;border-radius:50%;margin:8px auto 10px}
+.side h3{text-align:center;color:var(--dark);margin-bottom:20px}
+.side a{
+  display:block;padding:12px 15px;border-bottom:1px solid #eee;font-weight:700;
+}
+.side a:hover{background:var(--cream);color:#9b762d}
+.overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:2500;
+  opacity:0;pointer-events:none;transition:.3s;
+}
+.overlay.show{opacity:1;pointer-events:auto}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--dark),#334957);
+  color:#fff;padding:80px 0 75px;
+}
+.hero:after{
+  content:"";position:absolute;inset:auto -10% -120px;height:240px;
+  background:rgba(216,173,85,.08);transform:rotate(-4deg);
+}
+.hero-grid{
+  position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;
+  align-items:center;gap:50px;
+}
+.hero h1{font-size:clamp(2rem,4.5vw,3.6rem);line-height:1.35;margin-bottom:18px}
+.hero h1 span{color:var(--gold2)}
+.hero p{font-size:1.05rem;color:#e6ebef;max-width:700px;margin-bottom:25px}
+.hero-logo{
+  width:min(330px,80%);aspect-ratio:1;object-fit:cover;border-radius:28px;
+  border:5px solid rgba(216,173,85,.8);box-shadow:0 25px 60px rgba(0,0,0,.28);
+  margin:auto;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 20px;border-radius:30px;font-weight:800;transition:.25s;
+}
+.btn-gold{background:var(--gold);color:#17212b}
+.btn-outline{border:1px solid rgba(255,255,255,.45);color:#fff}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+
+/* Intro */
+.intro{padding:50px 0 20px;text-align:center}
+.section-title{text-align:center;margin-bottom:30px}
+.section-title small{color:#a17b31;font-weight:800}
+.section-title h2{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--dark);margin-top:4px}
+.section-title p{color:var(--muted);max-width:780px;margin:7px auto 0}
+
+/* Services */
+.services{padding:25px 0 65px}
+.service{
+  background:#fff;border:1px solid #eee;border-radius:24px;
+  box-shadow:var(--shadow);overflow:hidden;margin:28px 0;
+  scroll-margin-top:100px;
+}
+.service-head{
+  padding:22px 25px;background:linear-gradient(135deg,#fff,#f8f3e8);
+  border-bottom:1px solid #eee;
+}
+.service-head h2{color:var(--dark);font-size:1.55rem}
+.service-head p{color:var(--muted);font-size:.94rem}
+.gallery{
+  padding:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+}
+.gallery figure{overflow:hidden;border-radius:16px;background:#eee;aspect-ratio:4/3}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.gallery img:hover{transform:scale(1.06)}
+.service-body{padding:0 25px 25px}
+.service-body p{color:#4c555d;margin-bottom:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.tag{
+  background:#f5f0e6;color:#765a26;border-radius:20px;
+  padding:5px 11px;font-size:.78rem;font-weight:700;
+}
+.service-actions{display:flex;flex-wrap:wrap;gap:10px}
+.action{
+  display:inline-flex;align-items:center;gap:7px;border-radius:10px;
+  padding:9px 15px;font-weight:800;font-size:.88rem;
+}
+.whatsapp{background:#25d366;color:#fff}
+.call{background:var(--dark);color:#fff}
+.instagram{background:#8b3f72;color:#fff}
+.tiktok{background:#111;color:#fff}
+
+
+/* Service areas */
+.area-section{padding:60px 0;background:#fbfaf7}
+.area-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.area-grid a{background:#fff;border:1px solid #eee;border-radius:16px;padding:20px;box-shadow:0 7px 25px rgba(0,0,0,.05);transition:.25s}
+.area-grid a:hover{transform:translateY(-4px);border-color:#d8ad55}
+.area-grid strong{display:block;color:#17212b;font-size:1.15rem;margin-bottom:5px}
+.area-grid span{display:block;color:#68717a;font-size:.82rem;line-height:1.7}
+@media(max-width:850px){.area-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.area-grid{grid-template-columns:1fr}}
+
+/* SEO content */
+.seo{
+  background:var(--dark);color:#eef2f4;padding:55px 0;
+}
+.seo h2{color:var(--gold2);margin-bottom:12px}
+.seo p{color:#d8dee2}
+.seo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.seo-box{padding:22px;border:1px solid rgba(216,173,85,.25);border-radius:18px;background:rgba(255,255,255,.035)}
+.seo-box h3{color:#fff;margin-bottom:8px}
+
+/* Social */
+.social{
+  padding:55px 0;text-align:center;background:#fff;
+}
+.social-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+.social-links a{min-width:155px}
+
+/* Footer */
+footer{background:#101820;color:#cfd5d9;padding:30px 0 80px;text-align:center}
+footer strong{color:var(--gold2)}
+.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:12px 0}
+.footer-links a:hover{color:var(--gold2)}
+
+/* Fixed buttons */
+.fixed-contact{
+  position:fixed;bottom:18px;width:58px;height:58px;border-radius:50%;
+  z-index:2000;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);transition:.25s;
+}
+.fixed-contact:hover{transform:scale(1.1)}
+.fixed-contact svg{width:30px;height:30px;fill:#fff}
+.fixed-whatsapp{right:18px;background:#25d366}
+.fixed-call{left:18px;background:#1f2933}
+.fixed-label{
+  position:absolute;bottom:-25px;white-space:nowrap;font-size:10px;
+  color:#555;background:#fff;padding:1px 5px;border-radius:4px;
+}
+
+/* Responsive */
+@media(max-width:850px){
+  .desktop-links{display:none}
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-actions{justify-content:center}
+  .hero-logo{width:230px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .seo-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .header-inner{min-height:68px}
+  .brand img{width:48px;height:48px}
+  .brand-text strong{font-size:1rem}
+  .brand-text span{font-size:.68rem}
+  .hero{padding:55px 0}
+  .gallery{grid-template-columns:1fr;padding:12px}
+  .service-body,.service-head{padding-left:16px;padding-right:16px}
+  .fixed-contact{width:52px;height:52px;bottom:14px}
+  .fixed-whatsapp{right:13px}.fixed-call{left:13px}
+}
+</style>
+
+<!-- LocalBusiness + Organization -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "name":"مؤسسة الاتجاه اللامع",
+      "logo":"https://i.postimg.cc/02h5PNXc/a9a6550a-329e-4145-b504-8a77c54dbcd1.jpg",
+      "telephone":"+966535176805",
+      "sameAs":[
+        "https://www.instagram.com/lmhmry",
+        "https://www.tiktok.com/@theglittertrend.1"
+      ]
+    },
+    {
+      "@type":"LocalBusiness",
+      "name":"مؤسسة الاتجاه اللامع",
+      "image":"https://i.postimg.cc/02h5PNXc/a9a6550a-329e-4145-b504-8a77c54dbcd1.jpg",
+      "telephone":"+966535176805",
+      "priceRange":"SAR",
+      "description":"تأجير مستلزمات الحفلات والمناسبات من كنب وجلسات وطاولات وكراسي وكوش ومداخل وحواجز ولمبات وسماعات ومكيفات."
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<aside class="side" id="sideMenu">
+  <button class="close" onclick="closeMenu()">×</button>
+  <img class="side-logo" src="https://i.postimg.cc/02h5PNXc/a9a6550a-329e-4145-b504-8a77c54dbcd1.jpg" alt="شعار مؤسسة الاتجاه اللامع">
+  <h3>مؤسسة الاتجاه اللامع</h3>
+  <a href="#home" onclick="closeMenu()">الرئيسية</a>
+  <a href="#sofas" onclick="closeMenu()">تأجير الكنب</a>
+  <a href="#sessions" onclick="closeMenu()">تأجير الجلسات</a>
+  <a href="#tables" onclick="closeMenu()">تأجير الطاولات والكراسي</a>
+  <a href="#weddings" onclick="closeMenu()">الكوش والمداخل والاستقبال</a>
+  <a href="#lights" onclick="closeMenu()">اللمبات والحواجز والممرات والسماعات</a>
+  <a href="#ac" onclick="closeMenu()">مكيفات فريون وصحراوي</a>
+  <a href="#areas" onclick="closeMenu()">مناطق الخدمة</a>
+  <a href="#contact" onclick="closeMenu()">تواصل معنا</a>
+</aside>
+
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="#home">
+      <img src="https://i.postimg.cc/02h5PNXc/a9a6550a-329e-4145-b504-8a77c54dbcd1.jpg" alt="لوجو الاتجاه اللامع">
+      <div class="brand-text">
+        <strong>مؤسسة الاتجاه اللامع</strong>
+        <span>لتأجير مستلزمات الحفلات والمناسبات</span>
+      </div>
+    </a>
+
+    <nav class="desktop-links">
+      <a href="#sofas">الكنب</a>
+      <a href="#sessions">الجلسات</a>
+      <a href="#tables">الطاولات والكراسي</a>
+      <a href="#weddings">الكوش والمداخل</a>
+    </nav>
+
+    <button class="menu-btn" aria-label="فتح القائمة" onclick="openMenu()">☰</button>
+  </div>
+</header>
+
+<main id="home">
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>الاتجاه اللامع<br><span>لتجهيز وتأجير مستلزمات الحفلات</span></h1>
+      <p>
+        نوفر لك خيارات متنوعة لتجهيز المناسبات والاحتفالات،
+        من تأجير الكنب والجلسات إلى الطاولات والكراسي والكوش والمداخل
+        والإضاءة والحواجز والسماعات والمكيفات.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="https://wa.me/966535176805" target="_blank">💬 تواصل عبر واتساب</a>
+        <a class="btn btn-outline" href="tel:0535176805">📞 اتصل الآن</a>
+      </div>
+    </div>
+    <div>
+      <img class="hero-logo" src="https://i.postimg.cc/02h5PNXc/a9a6550a-329e-4145-b504-8a77c54dbcd1.jpg" alt="مؤسسة الاتجاه اللامع لتأجير مستلزمات الحفلات">
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container">
+    <div class="section-title">
+      <small>خدماتنا</small>
+      <h2>كل ما تحتاجه مناسبتك في مكان واحد</h2>
+      <p>تصفح الخدمات واختر ما يناسب حفلتك أو مناسبتك، ثم تواصل معنا للاستفسار والحجز.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+<div class="container">
+
+<!-- Sofas -->
+<article class="service" id="sofas">
+  <div class="service-head">
+    <h2>تأجير كنب وكنبات للمناسبات</h2>
+    <p>خيارات متعددة من الكنب لتجهيز المجالس والحفلات والاستراحات والمناسبات.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="https://i.postimg.cc/XN51yCGC/IMG-4769.jpg" alt="تأجير كنب للمناسبات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/RFHdfkFq/f5f9bd2b-de23-432e-9350-fc935406308f.jpg" alt="كنب للايجار" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/6pphz23D/53db2fc2-fadf-4335-a137-7b570fffc8fb.jpg" alt="تأجير كنبات حفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/282Qqkw3/ec7f7941-f7d0-4bc2-90c0-8ca8511ebff1.jpg" alt="كنب مناسبات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/6qBZ3g4f/e4f8601b-1549-4282-b190-a4fbd1fa5c08.jpg" alt="كنب فاخر للايجار" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/Wzt2XwB3/ab1c18e8-e0cf-4173-b93c-344bbc6f905b.jpg" alt="جلسات كنب للمناسبات" loading="lazy"></figure>
+  </div>
+  <div class="service-body">
+    <p>
+      نقدم خدمة <strong>تأجير كنب</strong> و<strong>تأجير كنبات</strong> للمناسبات والحفلات،
+      مع خيارات تناسب المجالس، حفلات الزواج، التخرج، العزائم والفعاليات. يمكن تنسيق الكنب
+      مع بقية مستلزمات المناسبة للحصول على مظهر مرتب ومريح للضيوف.
+    </p>
+    <div class="tags">
+      <span class="tag">تأجير كنب</span><span class="tag">كنب للايجار</span>
+      <span class="tag">تأجير كنبات</span><span class="tag">كنب حفلات</span>
+      <span class="tag">كنب مناسبات</span><span class="tag">كنب مجالس</span>
+      <span class="tag">تأجير كنب فاخر</span>
+    </div>
+    <div class="service-actions">
+      <a class="action whatsapp" href="https://wa.me/966535176805" target="_blank">واتساب</a>
+      <a class="action call" href="tel:0535176805">اتصال</a>
+    </div>
+  </div>
+</article>
+
+<!-- Sessions -->
+<article class="service" id="sessions">
+  <div class="service-head">
+    <h2>تأجير جلسات شعبية وجلسات للمناسبات</h2>
+    <p>جلسات مرتبة للفعاليات والمجالس والمناسبات الخاصة والجلسات الخارجية.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="https://i.postimg.cc/WzcDyK72/671abe4b-c1d8-4e49-b79d-2b48421c2d82.jpg" alt="تأجير جلسات شعبية" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/3xxkz220/79756eee-efac-40f7-a74c-758313634252.jpg" alt="جلسات مناسبات للايجار" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/T1xw0bR6/0526b9e8-5720-4f2b-9bf3-c31346c0e222.jpg" alt="جلسات خارجية" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/PxjTnk0Z/72c2acc9-8f05-410e-b9cd-71b9436c84e5.jpg" alt="جلسات حفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/N01v4zLj/715c921f-98fe-4983-b105-432856dd7fda.jpg" alt="جلسات شعبية للايجار" loading="lazy"></figure>
+  </div>
+  <div class="service-body">
+    <p>
+      نوفر <strong>تأجير جلسات شعبية</strong> وجلسات مناسبة للحفلات والاستراحات والمناسبات،
+      مع تنسيقات مختلفة تساعدك على تجهيز المكان بشكل أنيق ومريح. كما تناسب الجلسات
+      المناسبات العائلية والفعاليات والجلسات الخارجية.
+    </p>
+    <div class="tags">
+      <span class="tag">تأجير جلسات</span><span class="tag">جلسات شعبية</span>
+      <span class="tag">جلسات خارجية</span><span class="tag">جلسات مناسبات</span>
+      <span class="tag">جلسات حفلات</span><span class="tag">جلسات للايجار</span>
+    </div>
+    <div class="service-actions">
+      <a class="action whatsapp" href="https://wa.me/966535176805" target="_blank">واتساب</a>
+      <a class="action call" href="tel:0535176805">اتصال</a>
+    </div>
+  </div>
+</article>
+
+<!-- Tables -->
+<article class="service" id="tables">
+  <div class="service-head">
+    <h2>تأجير طاولات وكراسي للحفلات والمناسبات</h2>
+    <p>طاولات وكراسي لتجهيز موائد الضيوف والاستقبال والحفلات والفعاليات.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="https://i.postimg.cc/NfShwcHJ/66c1a45a-7524-4685-b68f-1821a450914e.jpg" alt="تأجير طاولات وكراسي" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/jdW9cFFx/8fe80bd9-aea1-46b9-a733-b3b0f5d1332e.jpg" alt="طاولات وكراسي حفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/qqNmmNjV/8125e48b-207e-47e5-87e7-5f3c7ca6b1dc.jpg" alt="كراسي مناسبات للايجار" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/MGtdq7LJ/f9c9e08e-7159-42fd-83e4-5592d1b2f306.jpg" alt="طاولات مناسبات للايجار" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/RFN8YpZY/IMG-4342.jpg" alt="تأجير كراسي للحفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/tgmvFdNT/c5e18665-fc9c-4e8d-bb02-8a2981447d0d.jpg" alt="تأجير طاولات حفلات" loading="lazy"></figure>
+  </div>
+  <div class="service-body">
+    <p>
+      تشمل خدماتنا <strong>تأجير طاولات وكراسي</strong> للمناسبات والحفلات والفعاليات،
+      بما يناسب حفلات الزواج والتخرج والعزائم والاجتماعات. اختر العدد والتنسيق المناسب
+      لمكان المناسبة وتواصل معنا لمعرفة الخيارات المتاحة.
+    </p>
+    <div class="tags">
+      <span class="tag">تأجير طاولات</span><span class="tag">تأجير كراسي</span>
+      <span class="tag">طاولات وكراسي</span><span class="tag">طاولات حفلات</span>
+      <span class="tag">كراسي حفلات</span><span class="tag">طاولات مناسبات</span>
+      <span class="tag">كراسي مناسبات</span><span class="tag">طاولات استقبال</span>
+    </div>
+    <div class="service-actions">
+      <a class="action whatsapp" href="https://wa.me/966535176805" target="_blank">واتساب</a>
+      <a class="action call" href="tel:0535176805">اتصال</a>
+    </div>
+  </div>
+</article>
+
+<!-- Weddings -->
+<article class="service" id="weddings">
+  <div class="service-head">
+    <h2>تأجير كوش وطاولات استقبال ومداخل</h2>
+    <p>تجهيزات استقبال تضيف لمسة مرتبة وأنيقة للمناسبات وحفلات الأفراح.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="https://i.postimg.cc/KzWXvSHQ/638a64ad-41ff-4b1f-8991-c7a81ed6e273.jpg" alt="تأجير كوش أفراح" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/j2NRpSS8/48df9ed6-1e55-45f8-99e0-9021087be9bd.jpg" alt="كوش مناسبات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/6pHx1vh7/e8d045f2-c338-4ce2-b5e3-4a235096f5e4.jpg" alt="تأجير مداخل مناسبات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/02PgkfWr/015c8e6a-84e3-4326-92b1-6acab0d7735f.jpg" alt="طاولات استقبال" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/VN3T3B0L/74f18130-b723-4008-befe-f3cdd72bf45f.jpg" alt="مدخل حفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/HsBNpC80/11bb39b5-5d5d-4373-936d-68fa24a9c3d7.jpg" alt="تجهيز كوش ومداخل" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/vTGPsPYH/60f1fadf-68b8-42c2-b02e-7edc672558d7.jpg" alt="كوش وطاولات استقبال للايجار" loading="lazy"></figure>
+  </div>
+  <div class="service-body">
+    <p>
+      نوفر حلول <strong>تأجير الكوش</strong> و<strong>مداخل المناسبات</strong> و<strong>طاولات الاستقبال</strong>
+      لتجهيز حفلات الزواج والأفراح والمناسبات الخاصة. يمكنك اختيار ما يناسب مساحة المكان
+      وطبيعة الحفل، مع إمكانية تنسيق أكثر من خدمة ضمن تجهيز واحد.
+    </p>
+    <div class="tags">
+      <span class="tag">تأجير كوش</span><span class="tag">كوش أفراح</span>
+      <span class="tag">كوش مناسبات</span><span class="tag">مداخل حفلات</span>
+      <span class="tag">طاولات استقبال</span><span class="tag">تأجير كوشات</span>
+      <span class="tag">تجهيز أفراح</span>
+    </div>
+    <div class="service-actions">
+      <a class="action whatsapp" href="https://wa.me/966535176805" target="_blank">واتساب</a>
+      <a class="action call" href="tel:0535176805">اتصال</a>
+    </div>
+  </div>
+</article>
+
+<!-- Lights/Sound -->
+<article class="service" id="lights">
+  <div class="service-head">
+    <h2>عقود لمبات وحواجز وممرات وسماعات</h2>
+    <p>إضاءة وتجهيزات صوتية وحواجز وممرات لإكمال تجهيز الحفلات والفعاليات.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="https://i.postimg.cc/Z5XVRYby/2c72a9bc-2a4b-4beb-9467-0558d89605c4.jpg" alt="عقود لمبات للحفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/Df56GPfJ/41fb5b4e-d76a-4f99-971f-c0a427b5eedd.jpg" alt="لمبات زينة للمناسبات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/W1qwQRGV/7b6ec75e-1a97-48e4-ac81-0953c241ce1d.jpg" alt="حواجز مناسبات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/jjzQSz3B/29535213-a6da-4302-9890-65e43e5febfc.jpg" alt="ممر حفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/NjXRd6tM/7d4e7e1c-fe11-4c74-a8f7-ae7278790af2.jpg" alt="ممر بنفسجي للحفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/xjFHYxTG/afd2a245-3167-4a99-a719-ee222fab80fb.jpg" alt="سماعات حفلات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/pd2yKzLx/779fbfd5-1597-4289-a604-3cdc00a60eea.jpg" alt="تأجير مكبرات صوت" loading="lazy"></figure>
+  </div>
+  <div class="service-body">
+    <p>
+      نجهز المناسبات بخيارات من <strong>عقود اللمبات</strong> والإضاءة والحواجز والممرات،
+      إضافة إلى <strong>تأجير السماعات ومكبرات الصوت</strong>. هذه الخدمات مناسبة للأفراح
+      والحفلات والفعاليات التي تحتاج إلى تجهيز بصري وصوتي متكامل.
+    </p>
+    <div class="tags">
+      <span class="tag">عقود لمبات</span><span class="tag">تأجير لمبات</span>
+      <span class="tag">إضاءة حفلات</span><span class="tag">تأجير حواجز</span>
+      <span class="tag">تأجير ممرات</span><span class="tag">ممر بنفسجي</span>
+      <span class="tag">تأجير سماعات</span><span class="tag">مكبرات صوت</span>
+      <span class="tag">سماعات حفلات</span>
+    </div>
+    <div class="service-actions">
+      <a class="action whatsapp" href="https://wa.me/966535176805" target="_blank">واتساب</a>
+      <a class="action call" href="tel:0535176805">اتصال</a>
+    </div>
+  </div>
+</article>
+
+<!-- AC -->
+<article class="service" id="ac">
+  <div class="service-head">
+    <h2>تأجير مكيفات فريون وصحراوي</h2>
+    <p>حلول تبريد للمناسبات والمواقع التي تحتاج إلى تجهيز مكيفات مؤقتة.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="https://i.postimg.cc/pLBKN29z/925297ef-0aa5-45c7-b698-34d6a08313bd.jpg" alt="تأجير مكيفات فريون" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/kGr26ZVy/718045eb-617c-4f10-9639-5d4b0505321a.jpg" alt="مكيفات مناسبات" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/Qd6VkV9H/ecab6f9b-1adf-43ab-9318-c9eff9b7ca31.jpg" alt="تأجير مكيفات صحراوية" loading="lazy"></figure>
+    <figure><img src="https://i.postimg.cc/bvDYxgf3/a3d43f3d-c886-4ff5-8e55-f0d56907c02d.jpg" alt="مكيف صحراوي للايجار" loading="lazy"></figure>
+  </div>
+  <div class="service-body">
+    <p>
+      تتوفر لدينا خدمة <strong>تأجير مكيفات فريون</strong> و<strong>مكيفات صحراوية</strong>
+      للمناسبات والمواقع والفعاليات. يساعد اختيار نوع التبريد المناسب على توفير أجواء
+      أكثر راحة للضيوف، خصوصًا في المناسبات التي تقام في المساحات الواسعة أو الخارجية.
+    </p>
+    <div class="tags">
+      <span class="tag">تأجير مكيفات</span><span class="tag">مكيفات فريون</span>
+      <span class="tag">مكيفات صحراوية</span><span class="tag">مكيف صحراوي</span>
+      <span class="tag">مكيفات حفلات</span><span class="tag">مكيفات مناسبات</span>
+    </div>
+    <div class="service-actions">
+      <a class="action whatsapp" href="https://wa.me/966535176805" target="_blank">واتساب</a>
+      <a class="action call" href="tel:0535176805">اتصال</a>
+    </div>
+  </div>
+</article>
+
+</div>
+</section>
+
+
+<section class="area-section" id="areas">
+  <div class="container">
+    <div class="section-title">
+      <small>نخدم المنطقة الشرقية</small>
+      <h2>تأجير مستلزمات الحفلات في مدن المنطقة الشرقية</h2>
+      <p>خدمات تأجير وتجهيز للمناسبات في الدمام والخبر والظهران والقطيف والجبيل والأحساء وبقيق.</p>
+    </div>
+    <div class="area-grid">
+      <a href="#sofas"><strong>الدمام</strong><span>تأجير كنب وجلسات وطاولات وكراسي ومستلزمات حفلات</span></a>
+      <a href="#sofas"><strong>الخبر</strong><span>تأجير كنب وجلسات وطاولات وكراسي للمناسبات</span></a>
+      <a href="#tables"><strong>القطيف</strong><span>تأجير طاولات وكراسي واحتياجات الحفلات</span></a>
+      <a href="#tables"><strong>الظهران</strong><span>تجهيز مناسبات وتأجير مستلزمات الحفلات</span></a>
+      <a href="#sessions"><strong>الجبيل</strong><span>تأجير جلسات وكنب وطاولات وكراسي</span></a>
+      <a href="#weddings"><strong>الأحساء</strong><span>تأجير كوش ومداخل وجلسات ومستلزمات المناسبات</span></a>
+      <a href="#ac"><strong>بقيق</strong><span>تأجير مكيفات ومستلزمات وتجهيزات الحفلات</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="seo">
+  <div class="container">
+    <div class="section-title">
+      <small>الاتجاه اللامع</small>
+      <h2>تأجير مستلزمات الحفلات والمناسبات</h2>
+      <p>نساعدك على جمع التجهيزات الأساسية لمناسبتك بطريقة منظمة ومناسبة لاحتياجك.</p>
+    </div>
+    <div class="seo-grid">
+      <div class="seo-box">
+        <h3>خدمة المنطقة الشرقية</h3>
+        <p>
+          نقدم خدمات التأجير للمناسبات في <strong>الدمام والخبر والقطيف والظهران والجبيل والأحساء وبقيق</strong>.
+          ومن عبارات البحث التي تعبر عن خدماتنا: تأجير كنب الدمام، تأجير كنب الخبر، تأجير جلسات أرضية الشرقية،
+          تأجير طاولات وكراسي الخبر، تأجير كنب ثلاثي، وتأجير مستلزمات الحفلات في مدن المنطقة الشرقية.
+        </p>
+      </div>
+      <div class="seo-box">
+        <h3>تجهيز الحفلات</h3>
+        <p>
+          من الكنب والجلسات والطاولات والكراسي إلى الكوش والمداخل والإضاءة والحواجز
+          والسماعات والمكيفات، نوفر مجموعة من مستلزمات الحفلات التي تساعد على تجهيز
+          المكان للمناسبات المختلفة.
+        </p>
+      </div>
+      <div class="seo-box">
+        <h3>تأجير مستلزمات المناسبات</h3>
+        <p>
+          سواء كانت المناسبة حفل زواج أو تخرج أو عزيمة أو فعالية أو تجمع عائلي،
+          يمكنك التواصل مع مؤسسة الاتجاه اللامع للاستفسار عن الخدمات المتاحة
+          والتنسيقات المناسبة لموقع المناسبة.
+        </p>
+      </div>
+      <div class="seo-box">
+        <h3>خدمات متنوعة</h3>
+        <p>
+          تأجير كنب، تأجير كنبات، تأجير جلسات شعبية، جلسات خارجية، تأجير طاولات،
+          تأجير كراسي، طاولات استقبال، كوش أفراح، مداخل، عقود لمبات، حواجز،
+          ممرات، سماعات، مكبرات صوت، مكيفات فريون ومكيفات صحراوية.
+        </p>
+      </div>
+      <div class="seo-box">
+        <h3>تواصل للحجز والاستفسار</h3>
+        <p>
+          للاستفسار عن الأسعار والتوافر والكميات المناسبة لمناسبتك، تواصل معنا
+          مباشرة عبر واتساب أو الاتصال الهاتفي. سيتم تحديد التفاصيل حسب نوع
+          المناسبة والموقع والاحتياج.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social" id="contact">
+  <div class="container">
+    <div class="section-title">
+      <small>تابعنا وتواصل معنا</small>
+      <h2>مؤسسة الاتجاه اللامع</h2>
+      <p>للاستفسارات والحجز تواصل معنا مباشرة، ويمكنك أيضًا متابعة حساباتنا.</p>
+    </div>
+    <div class="social-links">
+      <a class="action whatsapp" href="https://wa.me/966535176805" target="_blank">💬 واتساب</a>
+      <a class="action call" href="tel:0535176805">📞 0535176805</a>
+      <a class="action instagram" href="https://www.instagram.com/lmhmry" target="_blank" rel="noopener">📷 Instagram</a>
+      <a class="action tiktok" href="https://www.tiktok.com/@theglittertrend.1" target="_blank" rel="noopener">♪ TikTok</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <strong>مؤسسة الاتجاه اللامع</strong>
+    <div class="footer-links">
+      <a href="#sofas">الكنب</a>
+      <a href="#sessions">الجلسات</a>
+      <a href="#tables">الطاولات والكراسي</a>
+      <a href="#weddings">الكوش والمداخل</a>
+      <a href="#lights">الإضاءة والسماعات</a>
+      <a href="#ac">المكيفات</a>
+      <a href="#areas">مناطق الخدمة</a>
+    </div>
+    <p>© <span id="year"></span> مؤسسة الاتجاه اللامع - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<!-- Fixed WhatsApp -->
+<a class="fixed-contact fixed-whatsapp" href="https://wa.me/966535176805" target="_blank" aria-label="التواصل عبر واتساب">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.48 0 .13 5.34.13 11.91c0 2.1.55 4.15 1.59 5.96L.03 24l6.27-1.64a11.9 11.9 0 0 0 5.74 1.46h.01c6.57 0 11.92-5.35 11.92-11.91 0-3.18-1.24-6.17-3.47-8.41ZM12.05 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.86 9.86 0 0 1-1.52-5.27C2.15 6.45 6.58 2.02 12.05 2.02c2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.9 7.02c0 5.47-4.44 9.9-9.91 9.85Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.46-.88-.78-1.48-1.74-1.65-2.04-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.5 1.7.64.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+  </svg>
+  <span class="fixed-label">واتساب</span>
+</a>
+
+<!-- Fixed Call -->
+<a class="fixed-contact fixed-call" href="tel:0535176805" aria-label="الاتصال بمؤسسة الاتجاه اللامع">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/>
+  </svg>
+  <span class="fixed-label">اتصال</span>
+</a>
+
+<script>
+function openMenu(){
+  document.getElementById("sideMenu").classList.add("open");
+  document.getElementById("overlay").classList.add("show");
+}
+function closeMenu(){
+  document.getElementById("sideMenu").classList.remove("open");
+  document.getElementById("overlay").classList.remove("show");
+}
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
