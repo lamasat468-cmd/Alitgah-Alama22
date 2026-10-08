@@ -17,7 +17,22 @@
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-18453823347/gzmPCI7_35MdEPP-u99E'});
 </script>
-
+<!-- Event snippet for جهة اتصال (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18453823347/k_WCCOzJhZYdEPP-u99E',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <meta name="description" content="الاتجاه اللامع لتأجير مستلزمات الحفلات والمناسبات. تأجير كنب، جلسات، طاولات وكراسي، كوش ومداخل، حواجز وممرات ولمبات وسماعات، ومكيفات فريون وصحراوي.">
 <meta name="keywords" content="الاتجاه اللامع, تأجير مستلزمات الحفلات, تأجير مستلزمات المناسبات, تأجير كنب, كنب للايجار, تأجير جلسات, جلسات شعبية للايجار, تأجير طاولات وكراسي, تأجير كراسي, تأجير طاولات, طاولات مناسبات, كراسي حفلات, تأجير كوش, كوش افراح, تأجير مداخل, طاولات استقبال, تأجير حواجز, تأجير ممرات, تأجير لمبات, عقود لمبات, تأجير سماعات, مكبرات صوت, تأجير مكيفات, مكيفات فريون, مكيفات صحراوية, تجهيز حفلات, تجهيز مناسبات">
 
